@@ -40,7 +40,7 @@ call plug#end()
 " Configuración de NERDTree
 " ---------------------------
 map <C-n> :NERDTreeToggle<CR> " Abre/cierra NERDTree con Ctrl+n
-
+let NERDTreeShowHidden = 1
 " ---------------------------
 " Configuración de CoC (JS/TS)
 " ---------------------------
@@ -52,6 +52,11 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+nmap <C-w>1 :1wincmd w<CR>
+nmap <C-w>2 :2wincmd w<CR>
+nmap <C-w>3 :3wincmd w<CR>
+nmap <C-w>4 :4wincmd w<CR>
 
 " ---------------------------
 " Configuración de vim-fugitive
